@@ -204,6 +204,8 @@ class rabbitmq(
           $package_require = undef
         }
     }
+  } else {
+    $package_require = undef
   }
 
   if $admin_enable and $service_manage {
